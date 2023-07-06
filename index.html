@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>HTML Cheatsheet</title>
+    <link rel="stylesheet" href="./resources/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <a href="#">HTML Elements</a>
+                <a href="#">HTML Structure</a>
+                <a href="#">HTML Tables</a>
+                <a class="active" href="#">Symantic HTML</a>
+            </div>
+        </nav>
+        <h1>Nick's HTML Cheatsheet</h1>
+    </header>
+    <banner>
+        <section>
+            <h2>Semantic HTML Tags</h2>
+            <p>While semantic HTML tags don't provide a direct function in rendering a web page on a browser, 
+               they are an important aspect in any HTML code. When used correctly, semantic tags help compartmentalize 
+               the HTML code in a manner that provides meaning to the content it encompasses, hence the term "semantic" HTML. 
+               Because of this added meaning, semantic HTML helps with the following:</p>
+            <ul>
+                <li><strong>Accessibility:</strong> Makes webpages accessible on mobile devices and also assists 
+                    screen reader tech by adding context to the code, increasing the user expereince of those with 
+                    disabilities.</li>
+                <li><strong>Search Engine Optimization (SEO):</strong> Allows search engines to more easily interpret 
+                    and weight the content of the code, making search engines more likely to hit the website and increase 
+                    user traffic to the web page.</li>
+                <li><strong>Easy to Understand:</strong> Makes the source code easier for web developers to read and 
+                    interpret.</li>
+            </ul>
+            <p>Below is a table of some commonly used semantic tags.</p>
+        </section>
+    </banner>
+    <main>
+        <table class="tags">
+            <thead>
+                <tr>
+                    <th colspan="3", class="main">Semantic HTML Tags</th>
+                </tr>
+                <tr>
+                    <th scope="col", class="sub">Tag</th>
+                    <th scope="col", class="sub">Name</th>
+                    <th scope="col", class="sub">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;header&#62;</span></td>
+                    <td class="name">Header</td>
+                    <td class="descript">Used to contain the introductory content of the webpage.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;nav&#62;</span></td>
+                    <td class="name">Navigation</td>
+                    <td class="descript">Used to contain the navigation content of the webpage.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;main&#62;</span></td>
+                    <td class="name">Main</td>
+                    <td class="descript">Used to contain the dominant content of the source code.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;footer&#62;</span></td>
+                    <td class="name">Footer</td>
+                    <td class="descript">Used to contain the informational content (contact info, copy right info, terms of use, etc.) 
+                        at the bottom of the web page.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;section&#62;</span></td>
+                    <td class="name">Section</td>
+                    <td class="descript">Used to contain distinct parts of a webpage, such as chaptors or headings. They typically only 
+                        contain one major heading element.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;article&#62;</span></td>
+                    <td class="name">Article</td>
+                    <td class="descript">Used to define the content of the webpage that makes sense on it's own. Can be all forms of 
+                        media and text and can be within a section.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;aside&#62;</span></td>
+                    <td class="name">Aside</td>
+                    <td class="descript">Used to contain the content of a webpage that is not needed to understand the main point, 
+                        but adds to the other elements. Examples include endnotes, pull quotes, and sidebars.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;figure&#62;</span></td>
+                    <td class="name">Figure</td>
+                    <td>Used to section off static visual media like images, illustrations, and diagrams.</td>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;figcaption&#62;</span></td>
+                    <td class="name">Figure Caption</td>
+                    <td class="descript">Used to contain text that is directly associated with the static visual sectioned within 
+                        the <span class="grey">&#60;figure&#62;</span> tag.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;audio&#62;</span></td>
+                    <td class="name">Audio</td>
+                    <td class="descript">Used to embed audio content within the webpage. It needs the src attribute to work and 
+                        can use several other attributes to add user interactions.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;video&#62;</span></td>
+                    <td class="name">Video</td>
+                    <td class="descript">This element is similar in structure to the &#60;audio&#62; element. Used to embed video 
+                        content within the webpage. It needs the src attribute to work and can use several other 
+                        attributes to add user interactions.</td>
+                </tr>
+                <tr>
+                    <td class="tag"><span class="grey">&#60;embed&#62;</span></td>
+                    <td class="name">Embed</td>
+                    <td class="descript">Used to embed external content at a specifc point within the webpage. This content is provided 
+                        by an external application or source such as a browser plug-in. <strong>Note:</strong> browser 
+                        plug-ins support has been deprecated in most modern browers, making it unwise to rely on the 
+                        <span class="grey">&#60;embed&#62;</span> element. Use the above mentioned elements for their 
+                        respective forms of content instead.</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="attdescript"><p>While all of the above tags can be used with <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" target="_blank">
+            Global Attributes</a>, some of them either rely upon or can be enhanced with specific attributes. Below are a 
+            list of attributes that must/can be be used with the respective symantic html tag.</p></div>
+        <table class="attributes">
+            <thead>
+                <tr>
+                    <th colspan="4", class="main">Semantic HTML Attributes</th>
+                <tr>
+                    <th scope="col", class="sub">Attribute</th>
+                    <th scope="col", class="sub">Name</th>
+                    <th scope="col", class="sub">Description</th>
+                    <th scope="col", class="sub">Associated Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="attribute"><span class="grey">autoplay</span></td>
+                    <td class="name">Auto Play</td>
+                    <td>A <a href="https://developer.mozilla.org/en-US/docs/Glossary/Boolean/HTML" target="_blank">Boolean attribute</a> 
+                        used to begin playing the associated media as soon as possible, even before the browser has 
+                        fully downloaded the file.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">controls</span></td>
+                    <td class="name">Controls</td>
+                    <td class="descript">Used to display controls for the user to playback the associated media. Control options can 
+                        include volume adjustment, seeking, and pause/resume.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">controlslist</span></td>
+                    <td class="name">Controls List</td>
+                    <td class="descript">Used to let the browser pick which control set to display whenever the browser shows its own 
+                        set of controls (assuming the <span class="grey">controls</span> attribute has also been assigned). 
+                        Values can be set to <span class="grey">nodownload</span>, <span class="grey">nofullscreen</span>, 
+                        and <span class="grey">noremoteplayback</span>.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">crossorigin</span></td>
+                    <td class="name">Cross Origin</td>
+                    <td class="descript">An <a href="https://developer.mozilla.org/en-US/docs/Glossary/Enumerated" target="_blank">enumerated</a> attribute 
+                        that is used to determine whether to use <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">
+                        CORS</a> to retrieve the related audio file. The assigned values can either be <span class="value">anonymous</span> 
+                        or <span class="grey">use-credentials</span>.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">disableremoteplayback</span></td>
+                    <td class="name">Disable Remote Playback</td>
+                    <td class="descript">A Boolean attribute used to disable the remote playback option in wired and wireless technologies.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">loop</span></td>
+                    <td class="name">Loop</td>
+                    <td class="descript">A Boolean attribute that will automatically restart the associated media.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">muted</span></td>
+                    <td class="name">Muted</td>
+                    <td class="descript">A Boolean attribute that indicates whether the media will initially be silenced with a default value 
+                        of <span class="grey">false</span>.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">preload</span></td>
+                    <td class="name">Preload</td>
+                    <td class="descript">An enumerated attribute that indicates to the browser how to load the media in order to give the user 
+                        the best experience. The assigned values can be <span class="grey">none</span>, <span class="grey">metadata</span>, 
+                        <span class="grey">auto</span>, or <span class="grey">empty string</span>.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span></td>
+                <tr>
+                    <td class="attribute"><span class="grey">src</span></td>
+                    <td class="name">Source</td>
+                    <td class="descript">An attribute that is used to assign the URL of the media. This attribute is optional as the 
+                        <span class="grey">&#60;source&#62;</span> element can also be used within the associated media 
+                        block of the source code.</td>
+                    <td class="assoc"><span class="grey">&#60;audio&#62;</span>, <span class="grey">&#60;video&#62;</span>, <span class="grey">&#60;embed&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">disablepictureinpicture</span></td>
+                    <td class="name">Disable Picture in Picture</td>
+                    <td class="descript">An attribute that prevents the browser from using a Pictire-in-Picture context menu.</td>
+                    <td class="assoc"><span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">height</span></td>
+                    <td class="name">Height</td>
+                    <td class="descript">An attribute that assigns the height of the media display area in CSS pixels.</td>
+                    <td class="assoc"><span class="grey">&#60;video&#62;</span>, <span class="grey">&#60;embed&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">width</span></td>
+                    <td class="name">Width</td>
+                    <td class="descript">An attribute that assigns the width of the media display area in CSS pixels.</td>
+                    <td class="assoc"><span class="grey">&#60;video&#62;</span>, <span class="grey">&#60;embed&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">playsinline</span></td>
+                    <td class="name">Plays Inline</td>
+                    <td class="descript">A Boolean attribute that forces the video "inline", ie within the element's playback area.</td>
+                    <td class="assoc"><span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">poster</span></td>
+                    <td class="name">Poster</td>
+                    <td class="descript">An attribute that assigns a URL for an image to be displayed while the video is downloading. 
+                        If this isn't defined, the browser will not display anything until the first frame is downloaded, 
+                        which will then be used as the poster until the rest of the video is downloaded.</td>
+                    <td class="assoc"><span class="grey">&#60;video&#62;</span></td>
+                </tr>
+                <tr>
+                    <td class="attribute"><span class="grey">type</span></td>
+                    <td class="name">Type</td>
+                    <td class="descript">An attribute that assigns the <a href="https://developer.mozilla.org/en-US/docs/Glossary/MIME_type" target="_blank">MIME type</a> 
+                        to use to select the plug-in to instantiate.</td>
+                    <td class="assoc"><span class="grey">&#60;embed&#62;</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <!-- <footer>
+        <div class="footer">
+            <span class="footersub">Author: Nick Orsi</span>
+            <span class="footersub">Contact: nick.orsi1992@gmail.com</span>
+            <figure class="footersub">
+                <img src="./resources/images/22137049_10156815601524498_4651509180433433391_o rev1.png" alt="Codor's glorioius face">
+                <figcaption>All Rights Reserved Under Codor Inc.</figcaption>
+            </figure>
+        </div>
+    </footer> -->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Codor Inc</h2>
+                <figure class="footersub">
+                    <img src="./resources/images/22137049_10156815601524498_4651509180433433391_o rev1.png" alt="Codor's glorioius face">
+                    <figcaption>All Rights Reserved Under Codor Inc.</figcaption>
+                </figure>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Additional Info</h2>
+                <a href="#">About Nick Orsi</a>
+                <a href="#">Nick Orsi Github</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Social</h2>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

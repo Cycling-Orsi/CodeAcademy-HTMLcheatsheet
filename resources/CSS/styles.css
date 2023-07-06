@@ -1,0 +1,200 @@
+/* -------- General CSS Styling -------- */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+    box-sizing: border-box;
+    /* min-width: 412px;
+    max-width: 100%; */
+    font-family: 'Space Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+h1, h2, thead, .tag, .attribute, .name, .assoc {
+    text-align: center;
+}
+
+main {
+    margin: 0px 20px;
+}
+
+.grey {
+    background-color: #6A2C70;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F08A5D;
+}
+
+/* -------- Navigation Bar Styling -------- */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.navbar a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #EEEEEE;
+    background-color: #393E46;
+    padding: 10px;
+    font-size: 20px;
+    width: 25%;
+}
+
+.navbar a.active {
+    background-color: #00ADB5;
+}
+
+.navbar a.active:hover {
+    background-color: #00ADB5;
+}
+
+.navbar a:hover {
+    background-color: black;
+}
+
+/* -------- Main Header Styling -------- */
+
+h1 {
+    color: #00ADB5;
+    font-size: 64px;
+    margin: 30px;
+    margin-top: 69px;
+}
+
+/* -------- Banner Styling -------- */
+
+h2 {
+    font-size: 32px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+section, div.attdescript {
+    margin: 20px;
+    color: #EEEEEE;
+    font-size: 18px;
+}
+
+/* -------- Table Styling -------- */
+
+table, tr, td, th {
+    border: 2px solid #00ADB5;
+    border-collapse: collapse;
+    font-size: 18px;
+    color: #EEEEEE;
+    padding: 3px;
+}
+
+th.main {
+    font-size: 32px;
+}
+
+th.sub {
+    font-size: 24px;
+}
+
+/* -------- Footer Styling -------- */
+
+/* div.footer {
+    color: #EEEEEE; */
+    /* margin: 20px;
+    padding: 20px; */
+    /* display: flex;
+    justify-content: space-between;
+    text-align: center; */
+    /* background-color: #393E46;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img { 
+    width: 100px;
+    display: block;
+    margin: 0px auto;
+    background-color: #00ADB5;
+    border-radius: 25%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 10px;
+    text-align: center;
+} */
+
+/* .footersub {
+    width: 33%;
+} */
+
+/* .footer span{
+    position: relative;
+    top: 116px;
+} */
+
+.footer-container {
+    background-color: #393E46;
+    padding-bottom: 2rem;
+    margin: 8rem auto 0;
+    border-top: #00ADB5 solid 3px;
+}
+
+.footer {
+    width: 95%;
+    /* height: 30vh; */
+    color:#EEEEEE;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+.footer-1 {
+    position: relative;
+    left: -4rem;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.footer-heading a {
+    margin-bottom: 0.5rem;
+}
+
+.footer-container h2 {
+    margin-bottom: 8px;
+}
+
+.footer-1 h2 {
+    margin-bottom: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+img { 
+    width: 100px;
+    display: block;
+    margin: 0px auto;
+    background-color: #00ADB5;
+    border-radius: 25%;
+}
